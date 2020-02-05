@@ -140,47 +140,28 @@
       transition: all .5s ease-in-out;
   }
   
-  #home-btns .btn1{
-      font-family: sans-serif;
-      font-size: 15px;
-      color: #ffffff;
-      text-transform: uppercase;
-      background: #000000;
-      border-top: #000000;
-      border-left: #000000;
-      border-right: #000000;
-      max-width: 200px;
-      width: 100%;
-      height: 30px;
-      margin-top: 5px;
-      text-align: center;
-      transition: all .5s ease-in-out;
-  }
-  .btn1:hover{
-      transform: scale(.9);
-      border-bottom: 3px solid #E93302;
-  }
-  
+  #home-btns .btn1,
   #home-btns .btn2{
       font-family: sans-serif;
       font-size: 15px;
       color: #ffffff;
       text-transform: uppercase;
       background: #000000;
-      border-top: #000000;
-      border-left: #000000;
-      border-right: #000000;
       max-width: 200px;
       width: 100%;
       height: 30px;
       margin-top: 5px;
       text-align: center;
+      border: 1px solid #444444;
       transition: all .5s ease-in-out;
   }
-  
+  .btn1:hover,
   .btn2:hover{
-      transform: scale(.9);
-      border-bottom: 3px solid #E93302;
+    color: #000000 !important;
+    background: #d8d8d8 !important;
+    border: 1px solid transparent !important;
+    border-bottom: 2px solid red !important;
+
   }
   
   
@@ -313,25 +294,6 @@
           flex: 100%;
       }
   }
-  
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* EMAIL */
@@ -412,6 +374,7 @@
 
 #submit{
     font-family: sans-serif;
+    font-size: 12px;
     text-transform: uppercase;
     max-width: 200px;
     width: 100%;
@@ -423,14 +386,12 @@
     z-index: 1;
 }
 #submit:hover{
-    font-size: 15px; 
     color: #ffffff;
     width: 250px;
-    margin: none;
-    border: none;
+    border: 2px solid transparent;
     background-color: #E93302;
-    transform: scale(.9);
-    text-shadow: 1px 1px 0px #000000;
+    transform: scale(1);
+    text-shadow: 1px 0px 1px #000000;
 }
 @media screen and (max-width:980) {
     #catalog{
